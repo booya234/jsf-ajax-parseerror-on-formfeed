@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <title>ajax request with invalid form feed character causes ajax parse error</title>
+</h:head>
+<h:body>
+	
+	<p:tabView dynamic="true">
+		<p:tab title="default tab">
+			this tab will load without issue
+		</p:tab>
+		<p:tab title="click me for ajax parse error">
+			<h:outputText value="#{formFeeder.formFeed}"/> can you see this
+		</p:tab>
+	</p:tabView>
+	
+</h:body>
+</html>
